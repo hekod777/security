@@ -19,7 +19,7 @@ passport.use(new GoogleStrategy({
   // clientID: '238524570915-ivf9lnhm9bsfq13cle5ap8s28d4lmhrp.apps.googleusercontent.com',
   // clientSecret: 'GST6VQnVmhx1YIB1vDXXB3PF',
   clientID: '315775991549-jf47ngc5fjf3ob6bccqhlr5h1fhnl7ed.apps.googleusercontent.com',
-  clientSecret: '97UZZXUhFrqWnQzLojgNOJW3',
+  clientSecret: process.env.CLIENTSECRET,
   callbackURL: 'http://localhost:8080/auth/google/callback'
 }, function (token, refreshToken, profile, done) {
   var info = {

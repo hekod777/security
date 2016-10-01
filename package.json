@@ -4,7 +4,7 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "start": "nodemon --watch server",
+    "start": "CLIENTSECRET=97UZZXUhFrqWnQzLojgNOJW3 nodemon --watch server",
     "seed": "node seed",
     "db-init": "./db-init.sh",
     "postinstall": "npm run db-init"
